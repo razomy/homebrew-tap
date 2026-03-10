@@ -1,7 +1,7 @@
 class Razomy < Formula
   desc "Universal plugin CLI"
   homepage "https://github.com/razomy/cli"
-  version "0.0.0-alpha.2"
+  version "0.0.0-alpha.4"
 
   on_macos do
     if Hardware::CPU.intel?
