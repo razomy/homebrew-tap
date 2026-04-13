@@ -1,25 +1,25 @@
 class Razomy < Formula
   desc "Universal plugin CLI"
   homepage "https://github.com/razomy/cli"
-  version "0.0.0-alpha.4"
+  version "${VERSION}"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/razomy/cli/releases/download/#{version}/razomy-v#{version}-darwin-x64.tar.gz"
-      sha256 "YOUR_MAC_X64_SHA256"
+      url "https://github.com/razomy/cli/releases/download/${TAG}/${MAC_X64_FILE}"
+      sha256 "${MAC_X64_SHA}"
     elsif Hardware::CPU.arm?
-      url "https://github.com/razomy/cli/releases/download/#{version}/razomy-v#{version}-darwin-arm64.tar.gz"
-      sha256 "YOUR_MAC_ARM64_SHA256"
+      url "https://github.com/razomy/cli/releases/download/${TAG}/${MAC_ARM64_FILE}"
+      sha256 "${MAC_ARM64_SHA}"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/razomy/cli/releases/download/#{version}/razomy-v#{version}-linux-x64.tar.gz"
-      sha256 "YOUR_LINUX_X64_SHA256"
+      url "https://github.com/razomy/cli/releases/download/${TAG}/${LINUX_X64_FILE}"
+      sha256 "${LINUX_X64_SHA}"
     elsif Hardware::CPU.arm?
-      url "https://github.com/razomy/cli/releases/download/#{version}/razomy-v#{version}-linux-arm64.tar.gz"
-      sha256 "YOUR_LINUX_ARM64_SHA256"
+      url "https://github.com/razomy/cli/releases/download/${TAG}/${LINUX_ARM64_FILE}"
+      sha256 "${LINUX_ARM64_SHA}"
     end
   end
 
