@@ -1,24 +1,24 @@
 class Razomy < Formula
   desc "Universal plugin CLI"
   homepage "https://github.com/razomy/cli"
-  version "0.0.0-alpha.4.4"
+  version "0.0.0-alpha.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/razomy/cli/releases/download/0.0.0-alpha.4.4/"
+      url "https://github.com/razomy/cli/releases/download/0.0.0-alpha.4/"
       sha256 ""
     elsif Hardware::CPU.arm?
-      url "https://github.com/razomy/cli/releases/download/0.0.0-alpha.4.4/"
+      url "https://github.com/razomy/cli/releases/download/0.0.0-alpha.4/"
       sha256 ""
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/razomy/cli/releases/download/0.0.0-alpha.4.4/"
+      url "https://github.com/razomy/cli/releases/download/0.0.0-alpha.4/"
       sha256 ""
     elsif Hardware::CPU.arm?
-      url "https://github.com/razomy/cli/releases/download/0.0.0-alpha.4.4/"
+      url "https://github.com/razomy/cli/releases/download/0.0.0-alpha.4/"
       sha256 ""
     end
   end
